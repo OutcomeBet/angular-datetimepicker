@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/datetimepicker/jquery.datetimepicker.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/momentjs/min/moment-with-langs.min.js"></script>
+	<script src="../src/angular-datetime-picker.js"></script>
+	<script src="demo.js"></script>
+
+	<link rel="stylesheet" href="../bower_components/datetimepicker/jquery.datetimepicker.css"/>
+</head>
+<body ng-app="demo">
+<div ng-controller="Demo1Ctrl">
+	<input datetime-picker unixtime ng-model="model.timestamp" type="text" />
+	<br/>
+	{{model.timestamp}}
+</div>
+
+
+<div ng-controller="Demo2Ctrl">
+	<datetime-range-picker datetime-range-picker="model.range"></datetime-range-picker>
+	<br/>
+	{{model.range}}
+</div>
+</body>
+</html>
