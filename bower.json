@@ -1,11 +1,10 @@
 {
   "name": "angular-datetimepicker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "antness <antness2010@yandex.ru>"
   ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
