@@ -8,8 +8,8 @@
 	demo.controller('Demo2Ctrl', function($scope){
 		$scope.model = {
 			range: {
-				from: 1402292961 - 100000,
-				to: 1402292961 + 100000
+				start: 1402292961 - 100000,
+				end: 1402292961 + 100000
 			}
 		};
 	});
