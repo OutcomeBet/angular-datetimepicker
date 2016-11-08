@@ -1,6 +1,6 @@
 {
 	"name": "angular-datetimepicker",
-	"version": "0.1.3",
+	"version": "0.2.0",
 	"authors": [
 		"antness <antness2010@yandex.ru>",
 		"Scukerman <nngoblin@gmail.com>"
@@ -14,12 +14,12 @@
 		"tests"
 	],
 	"dependencies": {
-		"datetimepicker": "~2.5.4",
-		"angular": "~1.5.8",
-		"momentjs": "~2.6.0"
+		"datetimepicker": "2.5.4",
+		"angular": "1.5.8",
+		"momentjs": "2.15.2"
 	},
-	"description": "C2 BackOffice angular component for picking date",
-	"main": "src/angular-datetimepicker.js",
+	"description": "C2 BackOffice angular component for picking date and time",
+	"main": "dist/angular-datetimepicker.js",
 	"homepage": "https://github.com/OutcomeBet/angular-datetimepicker",
 	"private": true
 }

@@ -1,0 +1,31 @@
+{
+	"name": "angular-datetimepicker",
+	"version": "0.2.0",
+	"description": "C2 BackOffice angular component for picking date and time",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OutcomeBet/angular-datetimepicker.git"
+	},
+	"keywords": [
+		"angular",
+		"datetimepicker"
+	],
+	"author": [
+		{"name": "antness", "email": "antness2010@yandex.ru"},
+		{"name": "Scukerman", "email": "nngoblin@gmail.com"}
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/OutcomeBet/angular-datetimepicker/issues"
+	},
+	"homepage": "https://github.com/OutcomeBet/angular-datetimepicker#readme",
+	"dependencies": {
+		"gulp": "^3.9.1",
+		"gulp-rename": "^1.2.2",
+		"gulp-uglify": "^2.0.0"
+	}
+}
