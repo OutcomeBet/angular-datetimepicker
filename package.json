@@ -1,6 +1,6 @@
 {
 	"name": "angular-datetimepicker",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "C2 BackOffice angular component for picking date and time",
 	"main": "gulpfile.js",
 	"scripts": {
@@ -15,8 +15,14 @@
 		"datetimepicker"
 	],
 	"author": [
-		{"name": "antness", "email": "antness2010@yandex.ru"},
-		{"name": "Scukerman", "email": "nngoblin@gmail.com"}
+		{
+			"name": "antness",
+			"email": "antness2010@yandex.ru"
+		},
+		{
+			"name": "Scukerman",
+			"email": "nngoblin@gmail.com"
+		}
 	],
 	"license": "ISC",
 	"bugs": {
