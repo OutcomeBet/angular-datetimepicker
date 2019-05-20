@@ -17,6 +17,7 @@
 
 	m.constant('datetimePickerConfig', {
 		translations: {
+			none: 'None',
 			today: 'Today',
 			yesterday: 'Yesterday',
 			lastWeek: 'Last week',
@@ -60,20 +61,23 @@
 				'&nbsp;&nbsp;<select ng-model="model.range" ng-options="interval.title for interval in intervals"></select>',
 			controller: ['$scope', function($scope) {
 				$scope.intervals = [
-					{ title: datetimePickerConfig.translations.today, start: moment().startOf('day').unix(), end: moment().endOf('day').unix() },
-					{ title: datetimePickerConfig.translations.yesterday, start: moment().subtract(1, 'days').startOf('day').unix(), end: moment().subtract(1, 'days').endOf('day').unix() },
-					{ title: datetimePickerConfig.translations.lastWeek, start: moment().subtract(1, 'weeks').startOf('day').unix(), end: moment().unix() },
-					{ title: datetimePickerConfig.translations.lastMonth, start: moment().subtract(1, 'months').startOf('month').unix(), end: moment().subtract(1, 'months').endOf('month').unix() }
+					{title: datetimePickerConfig.translations.none, start: undefined, end: undefined},
+					{title: datetimePickerConfig.translations.today, start: moment().startOf('day').unix(), end: moment().endOf('day').unix()},
+					{title: datetimePickerConfig.translations.yesterday, start: moment().subtract(1, 'days').startOf('day').unix(), end: moment().subtract(1, 'days').endOf('day').unix()},
+					{title: datetimePickerConfig.translations.lastWeek, start: moment().subtract(1, 'weeks').startOf('day').unix(), end: moment().unix()},
+					{title: datetimePickerConfig.translations.lastMonth, start: moment().subtract(1, 'months').startOf('month').unix(), end: moment().subtract(1, 'months').endOf('month').unix()}
 				];
 
+				$scope.model = {
+					range: $scope.intervals[0],
+				};
+
 				$scope.$watch('model.range', function(range) {
-					if(range && (range.start || range.end)) {
-						if(!$scope.datetimeRangePicker) {
-							$scope.datetimeRangePicker = {};
-						}
-						$scope.datetimeRangePicker.start = range.start;
-						$scope.datetimeRangePicker.end = range.end;
+					if(!$scope.datetimeRangePicker) {
+						$scope.datetimeRangePicker = {};
 					}
+					$scope.datetimeRangePicker.start = range.start;
+					$scope.datetimeRangePicker.end = range.end;
 				});
 			}]
 		};
