@@ -1,6 +1,6 @@
 {
 	"name": "angular-datetimepicker",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"description": "C2 BackOffice angular component for picking date and time",
 	"main": "gulpfile.js",
 	"scripts": {

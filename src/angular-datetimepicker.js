@@ -69,7 +69,7 @@
 				];
 
 				$scope.model = {
-					range: $scope.intervals[0],
+					range: $scope.intervals[1],
 				};
 
 				$scope.$watch('model.range', function(range) {
