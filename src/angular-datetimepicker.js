@@ -61,7 +61,6 @@
 				'&nbsp;&nbsp;<select ng-model="model.range" ng-options="interval.title for interval in intervals"></select>',
 			controller: ['$scope', function($scope) {
 				$scope.intervals = [
-					{title: datetimePickerConfig.translations.none, start: undefined, end: undefined},
 					{title: datetimePickerConfig.translations.today, start: moment().startOf('day').unix(), end: moment().endOf('day').unix()},
 					{title: datetimePickerConfig.translations.yesterday, start: moment().subtract(1, 'days').startOf('day').unix(), end: moment().subtract(1, 'days').endOf('day').unix()},
 					{title: datetimePickerConfig.translations.lastWeek, start: moment().subtract(1, 'weeks').startOf('day').unix(), end: moment().unix()},
@@ -69,7 +68,7 @@
 				];
 
 				$scope.model = {
-					range: $scope.intervals[1],
+					range: $scope.intervals[0],
 				};
 
 				$scope.$watch('model.range', function(range) {
